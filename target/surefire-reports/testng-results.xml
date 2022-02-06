@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="nopcommerce suit" duration-ms="10157" started-at="2022-01-25T03:38:03 EET" finished-at="2022-01-25T03:38:13 EET">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="10157" started-at="2022-01-25T03:38:03 EET" finished-at="2022-01-25T03:38:13 EET">
+      <class name="test.userregstest">
+        <test-method status="PASS" signature="startdriver(java.lang.String)[pri:0, instance:test.userregstest@51e2adc7]" name="startdriver" is-config="true" duration-ms="34698" started-at="2022-01-25T03:37:28 EET" finished-at="2022-01-25T03:38:03 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startdriver -->
+        <test-method status="PASS" signature="usercanregin()[pri:1, instance:test.userregstest@51e2adc7]" name="usercanregin" duration-ms="7826" started-at="2022-01-25T03:38:03 EET" finished-at="2022-01-25T03:38:11 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- usercanregin -->
+        <test-method status="PASS" signature="scr(org.testng.ITestResult)[pri:0, instance:test.userregstest@51e2adc7]" name="scr" is-config="true" duration-ms="1" started-at="2022-01-25T03:38:11 EET" finished-at="2022-01-25T03:38:11 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=usercanregin status=SUCCESS method=userregstest.usercanregin()[pri:1, instance:test.userregstest@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scr -->
+        <test-method status="PASS" signature="regesteredusercanlogout()[pri:0, instance:test.userregstest@51e2adc7]" name="regesteredusercanlogout" duration-ms="937" started-at="2022-01-25T03:38:11 EET" depends-on-methods="test.userregstest.usercanregin" finished-at="2022-01-25T03:38:12 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regesteredusercanlogout -->
+        <test-method status="PASS" signature="scr(org.testng.ITestResult)[pri:0, instance:test.userregstest@51e2adc7]" name="scr" is-config="true" duration-ms="0" started-at="2022-01-25T03:38:12 EET" finished-at="2022-01-25T03:38:12 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=regesteredusercanlogout status=SUCCESS method=userregstest.regesteredusercanlogout()[pri:0, instance:test.userregstest@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scr -->
+        <test-method status="PASS" signature="regesteredusercanlogoin()[pri:0, instance:test.userregstest@51e2adc7]" name="regesteredusercanlogoin" duration-ms="1266" started-at="2022-01-25T03:38:12 EET" depends-on-methods="test.userregstest.regesteredusercanlogout" finished-at="2022-01-25T03:38:13 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- regesteredusercanlogoin -->
+        <test-method status="PASS" signature="scr(org.testng.ITestResult)[pri:0, instance:test.userregstest@51e2adc7]" name="scr" is-config="true" duration-ms="1" started-at="2022-01-25T03:38:13 EET" finished-at="2022-01-25T03:38:13 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=regesteredusercanlogoin status=SUCCESS method=userregstest.regesteredusercanlogoin()[pri:0, instance:test.userregstest@51e2adc7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- scr -->
+        <test-method status="PASS" signature="stopdriver()[pri:0, instance:test.userregstest@51e2adc7]" name="stopdriver" is-config="true" duration-ms="2589" started-at="2022-01-25T03:38:13 EET" finished-at="2022-01-25T03:38:16 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- stopdriver -->
+      </class> <!-- test.userregstest -->
+    </test> <!-- Test -->
+  </suite> <!-- nopcommerce suit -->
+</testng-results>
