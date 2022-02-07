@@ -10,6 +10,9 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
+import org.openqa.selenium.phantomjs.PhantomJSDriverService;
+import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
@@ -29,6 +32,16 @@ public class TestBase extends AbstractTestNGCucumberTests {
 			String chorme = System.getProperty("user.dir")+"//drivers//chromedriver1.exe";
 			System.setProperty("webdriver.chrome.driver", chorme);
 			driver=new ChromeDriver();	
+		}
+		// headless browser testing
+		else if (browername.equalsIgnoreCase("headless")) {
+			DesiredCapabilities caps = new DesiredCapabilities();
+			caps.setJavascriptEnabled(true);
+			caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY, 
+					System.getProperty("user.dir")+"//drivers//phantomjs.exe");
+			String[] phantomjsarg= {"--web-security=no","--ignore-ssl-errors=yes"};
+			caps.setCapability(PhantomJSDriverService.PHANTOMJS_CLI_ARGS, phantomjsarg);
+			driver=new PhantomJSDriver(caps);
 		}
 		else if (browername.equalsIgnoreCase("firefox")) {
 			String firefox = System.getProperty("user.dir")+"//drivers//geckodriver.exe";
